@@ -61,6 +61,44 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.top-left {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.top-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.bottom-left img {
+    grid-row: 1 / -1;
+}
+
+.top-right img[src="icons/profile-picture.png"]{
+    height: 100px;
+    width: 100px;
+}
+
+.bottom-left img[src="icons/profile-picture.png"]{
+    height: 150px;
+    width: 150px;
+}
+
+
+
 /* Header selectors --- */
 
 
