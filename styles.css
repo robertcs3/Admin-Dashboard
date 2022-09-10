@@ -58,7 +58,7 @@ body {
     background-color: red;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100px 100px;
 }
 
 .top-left {
@@ -66,21 +66,33 @@ body {
     grid-template-columns: 50px auto;
 }
 
+.top-left input {
+    height: 25px;
+    border-radius: 25px;
+    border: solid transparent;
+}
+
 .top-right {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
 }
 
 .bottom-left {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 50px;
 }
 
 .bottom-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    height: 50px;
+    justify-items: end;
+}
+
+.bottom-right button {
+    width: 100px;
 }
 
 .bottom-left img {
@@ -90,12 +102,21 @@ body {
 .top-right img[src="icons/profile-picture.png"]{
     height: 100px;
     width: 100px;
+    position: relative;
+    bottom: 2.5rem;
+    
+    
 }
 
 .bottom-left img[src="icons/profile-picture.png"]{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
+
+
+
+
+
 
 
 
