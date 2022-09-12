@@ -181,7 +181,33 @@ body {
     height: 200px;
     width: 500px;
     border: 2px solid green;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75% 25%;
+    word-break: break-all;
 }
+
+.content p {
+    grid-row: 1 / 2;
+}
+
+.content img {
+    grid-row: 2 / -1;
+}
+
+.content .icons {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.content .text {
+    overflow:auto;
+}
+
+
+
+
 
 .right-sidebar {
     grid-column: 2 / -1;
