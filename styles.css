@@ -135,7 +135,7 @@ body {
     width: 200px;
     grid-row: 1 / -1;
     position: relative;
-    bottom: 90px;
+    bottom: 85px;
     right: 65px;
 }
 
@@ -179,7 +179,7 @@ body {
 
 .projects .content {
     height: 200px;
-    width: 500px;
+    width: 550px;
     border: 2px solid green;
     display: grid;
     grid-template-columns: auto;
@@ -201,10 +201,9 @@ body {
     align-items: flex-end;
 }
 
-.content .text {
-    overflow:auto;
+.content p {
+    overflow: hidden;
 }
-
 
 
 
@@ -214,12 +213,28 @@ body {
     border: 2px solid pink;
     display: grid;
     grid-template-rows: auto 25px auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#trending {
-    
-    
+#announcements-container {
+    display: grid;
+    padding: 1.5rem;
+    grid-template-rows: repeat(3, 116px);
+    word-break: break-all;
 }
+
+#announcements-container .content {
+    display: flex;
+    border: 2px solid blue;
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
 
 
 #announcements-container, #trending-container {
