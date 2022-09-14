@@ -153,6 +153,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 50px auto;
+    padding-bottom: 4rem;
 }
 
 #projects, #announcements{
@@ -168,6 +169,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     border: 2px solid red;
+    padding-left: 1rem;
 }
 
 /* temp */
@@ -213,8 +215,9 @@ body {
     border: 2px solid pink;
     display: grid;
     grid-template-rows: auto 25px auto;
+    min-width: 350px;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 #announcements-container {
@@ -232,7 +235,7 @@ body {
 
 #trending-container {
     display: grid;
-    grid-template-columns: 0.7fr 2fr;
+    grid-template-columns: 0.7fr 2fr; 
     grid-template-rows: repeat(4, 1fr);
 }
 
